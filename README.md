@@ -1,5 +1,7 @@
 # connectivity_checker
 
+**PLEASE NOTE THIS CODE is developed around Flutter at version 2.8.1**
+
 This project is a test/demo of 2 things:
 
 - a way of checking for a valid internet connection
