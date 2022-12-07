@@ -43,8 +43,8 @@ class QRCodeNotfifier extends StateNotifier<QRCodeState> {
     return _currentCode ?? '';
   }
 
-  /// This is just used as a faux code generate simulating a network call if we have connectivity
-  /// if it fails and we have a cached code it will use that otherwise it will throw an Exception
+  /// This is where a call is made to the endpoint to get the code used to generate theQRCODE
+  /// It currently uses a faux call for demo purposes
   Future<String> _generateCode() async {
     String newCode = await _fauxCodeGenerator();
     return newCode;
